@@ -1,46 +1,92 @@
 import React from "react";
+import { motion } from "motion/react";
 import { FlipWords } from "./FlipWords";
 const HeroText = () => {
-
   const words = ["Secure", "Modren", "Scalable"];
 
   return (
     <div className=" z-10 mt-20 text-center bg-clip-text md:mt-40 md:text-left rounded-3xl">
       {/* destop */}
       <div className=" c-space flex-col hidden md:flex">
-        <h1 className=" text-4xl font-semibold">Hi I'm Anand</h1>
+        <motion.h1
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1 }}
+          className=" text-4xl font-semibold"
+        >
+          Hi I'm Anand
+        </motion.h1>
         <div className=" flex flex-col items-start">
-          <p className=" text-5xl text-neutral-300 font-semibold">
+          <motion.p
+            className=" text-5xl text-neutral-300 font-semibold"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1.2 }}
+          >
             {" "}
             A Devloper <br /> Dedicated to Crafting
-          </p>
-          <div className="">
+          </motion.p>
+          <motion.div
+            className=""
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1.4 }}
+          >
             <FlipWords
               className={"text-8xl font-black text-white"}
               words={["Secured", " Modren", " Scalable"]}
             />
-          </div>
-          <p className=" text-4xl text-neutral-300 font-semibold">
+          </motion.div>
+          <motion.p
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1.6 }}
+            className=" text-4xl text-neutral-300 font-semibold"
+          >
             {" "}
             Web Solutions{" "}
-          </p>
+          </motion.p>
         </div>
       </div>
       {/* mobile */}
       <div className="  flex space-y-6 flex-col md:hidden">
-        <p className=" text-4xl font-semibold"> Hi, I'm Anand </p>
+        <motion.p
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1 }}
+          className=" text-4xl font-semibold"
+        >
+          {" "}
+          Hi, I'm Anand{" "}
+        </motion.p>
         <div>
-          <p className=" text-5xl text-neutral-300 font-semibold"> Building</p>
-          <div>
+          <motion.p
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1.2 }}
+            className=" text-5xl text-neutral-300 font-semibold"
+          >
+            {" "}
+            Building
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1.4 }}
+          >
             <FlipWords
               words={words}
               className={"text-7xl font-black text-white"}
-              
             />
-          </div>
-          <p className=" text-4xl text-neutral-300 font-semibold">
+          </motion.div>
+          <motion.p
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1.6 }}
+            className=" text-4xl text-neutral-300 font-semibold"
+          >
             Web Application
-          </p>
+          </motion.p>
         </div>
       </div>
     </div>
