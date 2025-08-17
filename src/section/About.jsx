@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import coding from "/coding-pov.png";
 import Card from "../Components/Card";
-import leetcode from "/leetcode.png";
-import javscript from "/javascript.png";
-import convex from "/convex.png";
+import nextjs from "/nextjs.png";
+import redux from "/redux.png";
+import typescript from "/typescript.png";
 
 const About = () => {
+  const grid2Container= useRef()
+
   return (
     <section className=" c-space section-spacing">
       <h2 className=" text-heading"> About Me</h2>
@@ -26,18 +28,18 @@ const About = () => {
           <div className=" absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 bg-gradient-to-t from-indigo"></div>
         </div>
         <div className="   grid-default-color grid-2">
-          <div className=" flex items-center justify-center w-full h-full">
-            <p className=" flex items-end text-5xl text-gray-500">
+          <div ref={grid2Container} className=" flex items-center justify-center w-full h-full">
+            <p className=" flex items-end text-4xl sm:text-5xl text-gray-500">
               CODE IS CRAFT
             </p>
-            <Card style={{ rotate: "75deg" , top: "30%" , left: "20%" }} children=" GRASP" />
-            <Card style={{ rotate: "-30deg" , top: "60%" , left: "45%" }} children=" SQLED" />
-            <Card style={{ rotate: "90deg" , top: "30%" , left: "70%" }} children=" Design pattern" />
-            <Card style={{ rotate: "-45deg" , top: "55%" , left: "0%" }} children=" Design principle" />
-            <Card style={{ rotate: "20deg" , top: "10%" , left: "38%" }} children=" SRP" />
-             <Card style={{ rotate: "30deg" , top: "70%" , left: "70%" }} image={javscript} />
-             <Card style={{ rotate: "-45deg" , top: "70%" , left: "25%" }} image={leetcode} />
-             <Card style={{ rotate: "-45deg" , top: "5%" , left: "10%" }} image={convex} />
+            <Card containerRef={grid2Container} style={{ rotate: "75deg" , top: "30%" , left: "20%" }} children=" GRASP" />
+            <Card containerRef={grid2Container}  style={{ rotate: "-30deg" , top: "60%" , left: "45%" }} children=" SQLED" />
+            <Card containerRef={grid2Container}  style={{ rotate: "90deg" , top: "30%" , left: "70%" }} children=" Design pattern" />
+            <Card containerRef={grid2Container}  style={{ rotate: "-45deg" , top: "55%" , left: "0%" }} children=" Design principle" />
+            <Card containerRef={grid2Container}  style={{ rotate: "20deg" , top: "10%" , left: "38%" }} children=" SRP" />
+             <Card containerRef={grid2Container}  style={{ rotate: "30deg" , top: "70%" , left: "70%" }} image={nextjs} />
+             <Card containerRef={grid2Container}  style={{ rotate: "-45deg" , top: "70%" , left: "25%" }} image={typescript} />
+             <Card containerRef={grid2Container} style={{ rotate: "-45deg" , top: "5%" , left: "10%" }} image={redux} />
           </div>
         </div>
         <div className="   grid-black-color grid-3"></div>
