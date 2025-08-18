@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import coding from "/coding-pov.png";
 import Card from "../Components/Card";
 import nextjs from "/nextjs.png";
-import redux from "/redux.png";
+import mongodb from "/mongodb.png";
 import typescript from "/typescript.png";
 
 const About = () => {
@@ -39,7 +39,7 @@ const About = () => {
             <Card containerRef={grid2Container}  style={{ rotate: "20deg" , top: "10%" , left: "38%" }} children=" SRP" />
              <Card containerRef={grid2Container}  style={{ rotate: "30deg" , top: "70%" , left: "70%" }} image={nextjs} />
              <Card containerRef={grid2Container}  style={{ rotate: "-45deg" , top: "70%" , left: "25%" }} image={typescript} />
-             <Card containerRef={grid2Container} style={{ rotate: "-45deg" , top: "5%" , left: "10%" }} image={redux} />
+             <Card containerRef={grid2Container} style={{ rotate: "-45deg" , top: "5%" , left: "10%" }} image={mongodb} />
           </div>
         </div>
         <div className="   grid-black-color grid-3"></div>
