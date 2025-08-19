@@ -13,7 +13,7 @@ const Card = ({ children, style, image , containerRef }) => {
     />
   ) : (
     < motion.div
-      className=" absolute px-1 py-2 text-center text-xl rounded-full  ring ring-gray-700 font-extralight bg-storm w-[12rem]  cursor-grab"
+      className=" absolute px-1 py-1 lg:py-2 text-center text-lg lg:text-xl rounded-full  ring ring-gray-700 font-extralight bg-storm  lg:w-[12rem] w-[10rem]  cursor-grab"
       style={style}
       whileHover={{ scale: 1.05 }}
       drag

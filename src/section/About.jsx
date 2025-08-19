@@ -1,12 +1,15 @@
 import React, { useRef } from "react";
 import coding from "/coding-pov.png";
 import Card from "../Components/Card";
-import nextjs from "/nextjs.png";
-import mongodb from "/mongodb.png";
-import typescript from "/typescript.png";
+import nextjs from "/logo/nextjs.png";
+import mongodb from "/logo/mongodb.png";
+import jotai from "/logo/jotai.png";
+import { Globe } from "../Components/globe";
+import CopyEmailButton from "../Components/CopyEmailButton";
+import FrameWorks from "../Components/FrameWorks";
 
 const About = () => {
-  const grid2Container= useRef()
+  const grid2Container = useRef();
 
   return (
     <section className=" c-space section-spacing">
@@ -28,23 +31,86 @@ const About = () => {
           <div className=" absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 bg-gradient-to-t from-indigo"></div>
         </div>
         <div className="   grid-default-color grid-2">
-          <div ref={grid2Container} className=" flex items-center justify-center w-full h-full">
+          <div
+            ref={grid2Container}
+            className=" flex items-center justify-center w-full h-full"
+          >
             <p className=" flex items-end text-4xl sm:text-5xl text-gray-500">
               CODE IS CRAFT
             </p>
-            <Card containerRef={grid2Container} style={{ rotate: "75deg" , top: "30%" , left: "20%" }} children=" GRASP" />
-            <Card containerRef={grid2Container}  style={{ rotate: "-30deg" , top: "60%" , left: "45%" }} children=" SQLED" />
-            <Card containerRef={grid2Container}  style={{ rotate: "90deg" , top: "30%" , left: "70%" }} children=" Design pattern" />
-            <Card containerRef={grid2Container}  style={{ rotate: "-45deg" , top: "55%" , left: "0%" }} children=" Design principle" />
-            <Card containerRef={grid2Container}  style={{ rotate: "20deg" , top: "10%" , left: "38%" }} children=" SRP" />
-             <Card containerRef={grid2Container}  style={{ rotate: "30deg" , top: "70%" , left: "70%" }} image={nextjs} />
-             <Card containerRef={grid2Container}  style={{ rotate: "-45deg" , top: "70%" , left: "25%" }} image={typescript} />
-             <Card containerRef={grid2Container} style={{ rotate: "-45deg" , top: "5%" , left: "10%" }} image={mongodb} />
+            <Card
+              containerRef={grid2Container}
+              style={{ rotate: "75deg", top: "30%", left: "20%" }}
+              children=" GRASP"
+            />
+            <Card
+              containerRef={grid2Container}
+              style={{ rotate: "-30deg", top: "60%", left: "45%" }}
+              children=" SQLED"
+            />
+            <Card
+              containerRef={grid2Container}
+              style={{ rotate: "90deg", top: "30%", left: "70%" }}
+              children=" Design pattern"
+            />
+            <Card
+              containerRef={grid2Container}
+              style={{ rotate: "-45deg", top: "55%", left: "0%" }}
+              children=" Design principle"
+            />
+            <Card
+              containerRef={grid2Container}
+              style={{ rotate: "20deg", top: "10%", left: "38%" }}
+              children=" SRP"
+            />
+            <Card
+              containerRef={grid2Container}
+              style={{ rotate: "30deg", top: "70%", left: "70%" }}
+              image={nextjs}
+            />
+            <Card
+              containerRef={grid2Container}
+              style={{ rotate: "-45deg", top: "70%", left: "25%" }}
+              image={jotai}
+            />
+            <Card
+              containerRef={grid2Container}
+              style={{ rotate: "-45deg", top: "5%", left: "10%" }}
+              image={mongodb}
+            />
           </div>
         </div>
-        <div className="   grid-black-color grid-3"></div>
-        <div className="  grid-special-color grid-4"></div>
-        <div className=" grid-default-color grid-5"></div>
+        <div className="   grid-black-color grid-3">
+          <div className=" z-10 w-[50%]">
+            <p className=" headtext"> Time Zone</p>
+            <p className=" subtext">
+              {" "}
+              I'm based in India, and available for remote work
+            </p>
+          </div>
+          <figure className=" absolute lg:left-[30%]   tap-[10%]">
+            <Globe className={"top-28"} />
+          </figure>
+        </div>
+        <div className="  grid-special-color grid-4">
+          <div className=" flex items-center justify-center flex-col size-full gap-4">
+            <p className="headtext">Do you want to work together?</p>
+            <CopyEmailButton />
+          </div>
+          
+        </div>
+        <div className=" grid-default-color grid-5">
+           <div className=" z-10 w-[50%]">
+            <p className=" headtext"> Tack Stack</p>
+            <p className=" subtext">
+              {" "}
+              I specialize in various laguages, frameworks, and tools that's allow me to build robust and scalable applications.
+            </p>
+          </div>
+          <div className=" absolute inset-y-0 w-full h-full start-[50%] md:inset-y-9 md:scale-125">
+           <FrameWorks />
+          </div>
+        </div>
       </div>
     </section>
   );
