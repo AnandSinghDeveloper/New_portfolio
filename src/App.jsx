@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./section/Navbar";
 import Hero from "./section/Hero";
 import About from "./section/About";
+import Projects from "./section/Projects";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <section className=" min-h-screen"></section>
+      <Projects />
       <section className=" min-h-screen"></section>
     </div>
   );

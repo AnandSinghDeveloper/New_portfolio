@@ -97,18 +97,18 @@ const About = () => {
             <p className="headtext">Do you want to work together?</p>
             <CopyEmailButton />
           </div>
-          
         </div>
         <div className=" grid-default-color grid-5">
-           <div className=" z-10 w-[50%]">
+          <div className=" z-10 w-[50%]">
             <p className=" headtext"> Tack Stack</p>
             <p className=" subtext">
               {" "}
-              I specialize in various laguages, frameworks, and tools that's allow me to build robust and scalable applications.
+              I specialize in various laguages, frameworks, and tools that's
+              allow me to build robust and scalable applications.
             </p>
           </div>
           <div className=" absolute inset-y-0 w-full h-full start-[50%] md:inset-y-9 md:scale-125">
-           <FrameWorks />
+            <FrameWorks />
           </div>
         </div>
       </div>
