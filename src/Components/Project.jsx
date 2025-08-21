@@ -1,14 +1,21 @@
 import React from 'react'
 import { LuArrowUpRight } from "react-icons/lu";
+import { log } from 'three/tsl';
+// title , description , subDescription, href , logo , image , tags
+const Project = ({title, description, subDescription, href, logo, image, tags}) => {
 
-const Project = () => {
+  
   return (
     <>
       <div className='flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0'>
          <div >
-          <p className='text-2xl'></p>
+          <p className='text-2xl'> {title}</p>
           <div className='flex gap-5 mt-2 text-sand'>
-            <span className=''>vnm</span>
+            {
+              tags.map((tag ) => {
+                return <span key={tag.id}>{tag.name}</span>
+              })
+            }
           </div>
          
          </div>
