@@ -1,3 +1,5 @@
+import React from "react";
+import ecommerce from "../assets/projects/e-co.jpg";
 export const myProjects = [
   {
     id: 1,
@@ -12,27 +14,37 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/src/assets/projects/e-co.jpg",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logo/csharp.png",
+        name: "Node.js",
+        path: "/logo/nodejs.png",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/logo/dotnet.png",
+        name: "Express.js",
+        path: "/logo/express.png",
       },
       {
         id: 3,
-        name: "Ef Core",
-        path: "/logo/efcore.png",
+        name: "MongoDB",
+        path: "/logo/mongodb.png",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/logo/tailwindcss.png",
+        name: "JavaScript",
+        path: "/logo/javascript.png",
+      },
+      {
+        id: 4,
+        name: "Redux",
+        path: "/logo/redux.png",
+      },
+      {
+        id: 4,
+        name: "React",
+        path: "/logo/react.png",
       },
     ],
   },
@@ -49,27 +61,32 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/src/assets/projects/slack.png",
     tags: [
-      {
+     {
         id: 1,
-        name: "Auth0",
-        path: "/assets/logo/auth0.png",
+        name: "Next.js",
+        path: "/logo/nextjs.png",
       },
       {
         id: 2,
-        name: "React",
-        path: "/logo/react.png",
+        name: "Jotai",
+        path: "/logo/jotai.png",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/logo/sqlite.png",
+        name: "Convex",
+        path: "/logo/convex.png",
       },
       {
         id: 4,
         name: "TailwindCSS",
         path: "/logo/tailwindcss.png",
+      },
+      {
+        id: 5,
+        name: "node.js",
+        path: "/logo/nodejs.png",
       },
     ],
   },
@@ -86,27 +103,42 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/src/assets/projects/uber.jpg",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/logo/blazor.png",
+        name: "Node.js",
+        path: "/logo/nodejs.png",
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/logo/dotnetcore.png",
+        name: "Express.js",
+        path: "/logo/express.png",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/logo/sqlite.png",
+        name: "MongoDB",
+        path: "/logo/mongodb.png",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/logo/tailwindcss.png",
+        name: "JavaScript",
+        path: "/logo/javascript.png",
+      },
+      {
+        id: 4,
+        name: "Redux",
+        path: "/logo/redux.png",
+      },
+      {
+        id: 4,
+        name: "React",
+        path: "/logo/react.png",
+      },
+      {
+        id: 5,
+        name: "node.js",
+        path: "/logo/nodejs.png",
       },
     ],
   },
@@ -123,27 +155,27 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/game-engine.jpg",
+    image: "/src/assets/projects/jobHunt.jpg",
     tags: [
       {
         id: 1,
-        name: "C++",
-        path: "/logo/cplusplus.png",
+        name: "Next.js",
+        path: "/logo/nextjs.png",
       },
       {
         id: 2,
-        name: "C#",
-        path: "/assets/logo/csharp.png",
+        name: "tailwindcss",
+        path: "/logo/tailwindcss.png",
       },
       {
         id: 3,
         name: "Git",
-        path: "/assets/logo/git.png",
+        path: "/logo/git.png",
       },
       {
         id: 4,
         name: "Microsoft",
-        path: "/assets/logo/microsoft.png",
+        path: "/logo/.png",
       },
     ],
   },
@@ -197,7 +229,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/elearning.jpg",
+    image: "/src/assets/projects/employs.jpg",
     tags: [
       {
         id: 1,

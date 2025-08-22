@@ -138,3 +138,24 @@ body {
 .field-input-focus {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20;
 }
+
+ .modal-enter {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+          .no-scrollbar {
+          scrollbar-width: none; /* Firefox */
+          -ms-overflow-style: none; /* IE and Edge */
+        }
+        .modal-enter-active {
+          opacity: 1;
+          transform: scale(1);
+          transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+        }
+        .tag-hover {
+          transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+        }
+        .tag-hover:hover {
+          transform: scale(1.1);
+          box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+        }

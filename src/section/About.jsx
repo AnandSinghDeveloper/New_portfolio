@@ -89,7 +89,7 @@ const About = () => {
             </p>
           </div>
           <figure className=" absolute lg:left-[30%]   tap-[10%]">
-            <Globe className={"top-28"} />
+            {/* <Globe className={"top-28"} /> */}
           </figure>
         </div>
         <div className="  grid-special-color grid-4">
