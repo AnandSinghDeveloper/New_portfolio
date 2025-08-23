@@ -63,7 +63,7 @@ export const myProjects = [
     logo: "",
     image: "/src/assets/projects/slack.png",
     tags: [
-     {
+      {
         id: 1,
         name: "Next.js",
         path: "/logo/nextjs.png",
@@ -153,7 +153,7 @@ export const myProjects = [
       "Implemented a scripting system for easy game customization.",
       "Optimized performance with multi-threading and efficient memory management.",
     ],
-    href: "",
+    href: "https://job-huntly-landing-page-i2c2.vercel.app/landing",
     logo: "",
     image: "/src/assets/projects/jobHunt.jpg",
     tags: [
@@ -190,9 +190,9 @@ export const myProjects = [
       "Optimized SEO and page speed using Vite.js for fast builds.",
       "Implemented custom widgets and plugin compatibility for extended functionality.",
     ],
-    href: "",
+    href: "https://beautiful-animated-react-site.vercel.app/",
     logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
+    image: "/src/assets/projects/ochi.png",
     tags: [
       {
         id: 1,
@@ -310,51 +310,95 @@ export const experiences = [
 ];
 export const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://robohash.org/jack",
+    name: "TailwindCSS",
+    img: "/logo/tailwindcss.png",
+  },
+   {
+    name: "Redux",
+    img: "/logo/redux.png",
+  },
+   {
+    name: "Jotai",
+    img: "/logo/jotai.png",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://robohash.org/jill",
+    name: "React",
+    img: "/logo/react.png",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://robohash.org/john",
+    name: "Next.js",
+    img: "/logo/nextjs.png",
   },
   {
-    name: "Alice",
-    username: "@alice",
-    body: "This is hands down the best thing I've experienced. Highly recommend!",
-    img: "https://robohash.org/alice",
+    name: "Convex",
+    img: "/logo/convex.png",
   },
   {
-    name: "Bob",
-    username: "@bob",
-    body: "Incredible work! The attention to detail is phenomenal.",
-    img: "https://robohash.org/bob",
+    name: "Docker",
+    img: "/logo/docker.png",
   },
   {
-    name: "Charlie",
-    username: "@charlie",
-    body: "This exceeded all my expectations. Absolutely stunning!",
-    img: "https://robohash.org/charlie",
+    name: "TypeScript",
+    img: "/logo/typescript.png",
   },
   {
-    name: "Dave",
-    username: "@dave",
-    body: "Simply breathtaking. The best decision I've made in a while.",
-    img: "https://robohash.org/dave",
+    name: "JavaScript",
+    img: "/logo/javascript.png",
   },
   {
-    name: "Eve",
-    username: "@eve",
-    body: "So glad I found this. It has changed the game for me.",
-    img: "https://robohash.org/eve",
+    name: "Node.js",
+    img: "/logo/nodejs.png",
+  },
+  {
+    name: "Express.js",
+    img: "/logo/express.png",
+  },
+  {
+    name: "TRPC",
+    img: "/logo/trpc.svg",
+  },
+   {
+    name: "Redis",
+    img: "/logo/redis.png",
+  },
+   {
+    name: "Vercel",
+    img: "/logo/vecel.png",
+  },
+   {
+    name: "github",
+    img: "/logo/github.png",
+  },
+   {
+    name: "Figma",
+    img: "/logo/figma.png",
+  },
+   {
+    name: "Postman",
+    img: "/logo/postman.png",
+  },
+  {
+    name: "Scoket.io",
+    img: "/logo/socket.png",
+  },
+  {
+    name: "Prisma",
+    img: "/logo/prisma.png",
+  },
+  {
+    name: "MongoDB",
+    img: "/logo/mongodb.png",
+  },
+  {
+    name: "PostgreSQL",
+    img: "/logo/postgresql.png",
+  },
+  {
+    name: "MySQL",
+    img: "/logo/mysql.png",
+  },
+  {
+    name: "Zod",
+    img: "/logo/zod.webp",
   },
 ];

@@ -1,6 +1,7 @@
 import React from "react";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
+import { motion } from "motion/react";
 
 const ProjectDetails = ({
   closeModal,
@@ -14,7 +15,9 @@ const ProjectDetails = ({
   return (
     <>
       <div className="fixed inset-0 z-50 flex items-center justify-center w-full min-h-screen p-2 sm:p-4 bg-black/50 backdrop-blur-md animate-in fade-in duration-200">
-        <div
+        < motion.div
+         initial={{ opacity: 0, scale: 0.5 }}
+         animate={{ opacity: 1, scale: 1 }}
           className="relative w-full max-w-sm sm:max-w-xl lg:max-w-2xl max-h-[90vh] min-h-[50vh] my-4 sm:my-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-white/20 rounded-2xl sm:rounded-3xl shadow-2xl modal-enter-active overflow-y-auto no-scrollbar"
           onClick={(e) => e.stopPropagation()}
         >
@@ -97,7 +100,7 @@ const ProjectDetails = ({
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
