@@ -5,6 +5,8 @@ import About from "./section/About";
 import Projects from "./section/Projects";
 import Expriences from "./section/Expriences";
 import { Testimonial } from "./section/Testimonial";
+import Contact from "./section/Contect";
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
       <Projects />
       <Expriences />
       <Testimonial />
+     <Contact />
       <section className=" min-h-screen"></section>
     </div>
   );
