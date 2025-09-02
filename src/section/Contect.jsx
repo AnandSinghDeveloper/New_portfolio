@@ -10,8 +10,7 @@ import {
   Sparkles,
   Zap,
 } from "lucide-react";
-import { WavyBackground } from "../Components/WavyBackgraund";
-import { log } from "three/src/nodes/TSL.js";
+import { BackgroundLines } from "../Components/WavyBackgraund";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -104,10 +103,10 @@ export default function Contact() {
         },
         "df419uOTMX7T4oZaL"
       );
-// sent email
+      // sent email
       await emailjs.send(
-        "service_fr480xm", 
-        "template_okc76sq", 
+        "service_fr480xm",
+        "template_okc76sq",
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -117,10 +116,10 @@ export default function Contact() {
         "df419uOTMX7T4oZaL"
       );
 
-      console.log("Email sent successfully 🎉");
+      
       setIsSubmitted(true);
 
-      alert("Email sent successfully");
+      
     } catch (error) {
       setErrors({ message: "Failed to send email. Please try again later." });
     }
@@ -173,8 +172,8 @@ export default function Contact() {
 
   return (
     <section className=" relative flex items-center  section-spacing justify-center bg-midnight  ">
-      <WavyBackground className={" w-[80%] "}>
-        <div className="max-w-3xl md:max-w-4xl mx-auto  mt-40">
+      <BackgroundLines className={" w-[80%]   "}>
+        <div className="max-w-3xl md:max-w-4xl mx-auto ">
           <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900  rounded-2xl shadow-2xl border border-gray-700/50 overflow-hidden">
             {/* Animated background elements */}
             <div className="absolute inset-0 overflow-hidden ">
@@ -453,8 +452,8 @@ export default function Contact() {
             }
           `}</style>
         </div>
-      </WavyBackground>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-primary"></div>
+      </BackgroundLines>
+      {/* <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-primary"></div> */}
       {/* <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-primary"></div> */}
     </section>
   );

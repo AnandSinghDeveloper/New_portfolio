@@ -6,6 +6,7 @@ import Projects from "./section/Projects";
 import Expriences from "./section/Expriences";
 import { Testimonial } from "./section/Testimonial";
 import Contact from "./section/Contect";
+import Footer from "./section/Footer";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       <Expriences />
       <Testimonial />
      <Contact />
-      <section className=" min-h-screen"></section>
+     <Footer />
     </div>
   );
 }
