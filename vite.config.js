@@ -1,12 +1,12 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/vite"; // Tailwind plugin
+import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss(), // ✅ add tailwindcss plugin
+    tailwindcss(), 
   ],
   resolve: {
     alias: {
@@ -16,12 +16,12 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    exclude: ["framer-motion", "motion"], // ignore use client warnings
+    exclude: ["framer-motion", "motion"], 
   },
   build: {
     commonjsOptions: {
       transformMixedEsModules: true,
     },
-    chunkSizeWarningLimit: 1600, // increase chunk warning limit
+    chunkSizeWarningLimit: 1600, 
   },
 });
