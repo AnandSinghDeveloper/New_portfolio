@@ -1,16 +1,27 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite"; // Tailwind plugin
+import path from "path";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    tailwindcss(), // ✅ add tailwindcss plugin
+  ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+      "@components": path.resolve(__dirname, "./src/Components"),
+      "@sections": path.resolve(__dirname, "./src/section"),
+    },
+  },
   optimizeDeps: {
-    exclude: ["framer-motion", "motion"], // don’t prebundle these (avoids "use client" warnings)
+    exclude: ["framer-motion", "motion"], // ignore use client warnings
   },
   build: {
     commonjsOptions: {
-      transformMixedEsModules: true, // make sure mixed ESM/CJS works
+      transformMixedEsModules: true,
     },
-    chunkSizeWarningLimit: 1600, // silence large bundle warnings
+    chunkSizeWarningLimit: 1600, // increase chunk warning limit
   },
 });
