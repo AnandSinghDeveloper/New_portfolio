@@ -4,7 +4,7 @@ import Card from "../Components/Card";
 import nextjs from "/logo/nextjs.png";
 import mongodb from "/logo/mongodb.png";
 import jotai from "/logo/jotai.png";
-import { Globe } from "../Components/Globe";
+import { Globe } from "../Components/globe";
 import CopyEmailButton from "../Components/CopyEmailButton";
 import FrameWorks from "../Components/FrameWorks";
 
