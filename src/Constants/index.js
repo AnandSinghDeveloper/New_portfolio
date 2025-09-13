@@ -1,5 +1,5 @@
 import React from "react";
-import ecommerce from "../assets/projects/e-co.jpg";
+
 export const myProjects = [
   {
     id: 1,
@@ -167,16 +167,7 @@ export const myProjects = [
         name: "tailwindcss",
         path: "/logo/tailwindcss.png",
       },
-      {
-        id: 3,
-        name: "Git",
-        path: "/logo/git.png",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/logo/.png",
-      },
+    
     ],
   },
   {
@@ -196,24 +187,15 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "WordPress",
-        path: "/logo/wordpress.png",
+        name: "React",
+        path: "/logo/react.png",
       },
       {
         id: 2,
-        name: "HTML5",
-        path: "/logo/html5.png",
+        name: "TailwindCSS",
+        path: "/logo/tailwindcss.png",
       },
-      {
-        id: 3,
-        name: "CSS3",
-        path: "/logo/css3.png",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/logo/vitejs.png",
-      },
+     
     ],
   },
   {
@@ -233,19 +215,11 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/logo/blazor.png",
+        name: "React",
+        path: "/logo/react.png",
       },
-      {
-        id: 2,
-        name: "Azure",
-        path: "/logo/azure.png",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/logo/stripe.png",
-      },
+     
+     
       {
         id: 4,
         name: "TailwindCSS",
@@ -257,19 +231,39 @@ export const myProjects = [
 
 export const mySocials = [
   {
-    name: "WhatsApp",
+    name: "Twitter",
     href: "",
-    icon: "/assets/socials/",
+    icon: "/src/assets/socials/",
+  },
+  {
+    name: "Discord",
+    href: "",
+    icon: "/src/assets/socials/",
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
-    icon: "/assets/socials/linkedIn.png",
+    href: "",
+    icon: "/src/assets/socials/linkedIn.png",
   },
   {
-    name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
-    icon: "/assets/socials/instagram.png",
+    name: "Github",
+    href: "",
+    icon: "/src/assets/socials/instagram.png",
+  },
+   {
+    name: "Leetcode",
+    href: "",
+    icon: "/src/assets/socials/instagram.png",
+  },
+   {
+    name: "Hackerrank",
+    href: "",
+    icon: "/src/assets/socials/instagram.png",
+  },
+   {
+    name: "Gmail",
+    href: "",
+    icon: "/src/assets/socials/instagram.png",
   },
 ];
 
@@ -308,97 +302,4 @@ export const experiences = [
     ],
   },
 ];
-export const reviews = [
-  {
-    name: "TailwindCSS",
-    img: "/logo/tailwindcss.png",
-  },
-   {
-    name: "Redux",
-    img: "/logo/redux.png",
-  },
-   {
-    name: "Jotai",
-    img: "/logo/jotai.png",
-  },
-  {
-    name: "React",
-    img: "/logo/react.png",
-  },
-  {
-    name: "Next.js",
-    img: "/logo/nextjs.png",
-  },
-  {
-    name: "Convex",
-    img: "/logo/convex.png",
-  },
-  {
-    name: "Docker",
-    img: "/logo/docker.png",
-  },
-  {
-    name: "TypeScript",
-    img: "/logo/typescript.png",
-  },
-  {
-    name: "JavaScript",
-    img: "/logo/javascript.png",
-  },
-  {
-    name: "Node.js",
-    img: "/logo/nodejs.png",
-  },
-  {
-    name: "Express.js",
-    img: "/logo/express.png",
-  },
-  {
-    name: "TRPC",
-    img: "/logo/trpc.svg",
-  },
-   {
-    name: "Redis",
-    img: "/logo/redis.png",
-  },
-   {
-    name: "Vercel",
-    img: "/logo/vecel.png",
-  },
-   {
-    name: "github",
-    img: "/logo/github.png",
-  },
-   {
-    name: "Figma",
-    img: "/logo/figma.png",
-  },
-   {
-    name: "Postman",
-    img: "/logo/postman.png",
-  },
-  {
-    name: "Scoket.io",
-    img: "/logo/socket.png",
-  },
-  {
-    name: "Prisma",
-    img: "/logo/prisma.png",
-  },
-  {
-    name: "MongoDB",
-    img: "/logo/mongodb.png",
-  },
-  {
-    name: "PostgreSQL",
-    img: "/logo/postgresql.png",
-  },
-  {
-    name: "MySQL",
-    img: "/logo/mysql.png",
-  },
-  {
-    name: "Zod",
-    img: "/logo/zod.webp",
-  },
-];
+
