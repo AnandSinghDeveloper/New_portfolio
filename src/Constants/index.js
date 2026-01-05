@@ -233,57 +233,63 @@ export const mySocials = [
   {
     name: "Twitter",
     href: "",
-    icon: "/src/assets/socials/",
+    icon: "/src/assets/socials/twitter.png",
   },
   {
     name: "Discord",
     href: "",
-    icon: "/src/assets/socials/",
+    icon: "/src/assets/socials/discord.png",
   },
   {
     name: "Linkedin",
     href: "",
     icon: "/src/assets/socials/linkedIn.png",
   },
+   {
+    name: "Instagram",
+    href: "",
+    icon: "/src/assets/socials/insta.png",
+  },
+
   {
     name: "Github",
     href: "",
-    icon: "/src/assets/socials/instagram.png",
+    icon: "/src/assets/socials/github.png",
   },
    {
     name: "Leetcode",
     href: "",
-    icon: "/src/assets/socials/instagram.png",
+    icon: "/src/assets/socials/leetcode.png",
   },
    {
     name: "Hackerrank",
     href: "",
-    icon: "/src/assets/socials/instagram.png",
+    icon: "/src/assets/socials/hackerrank.png",
   },
    {
     name: "Gmail",
     href: "",
-    icon: "/src/assets/socials/instagram.png",
+    icon: "/src/assets/socials/gmail.png",
   },
 ];
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    title: "Full-Stack Developer",
+    job: "Ishrey Consulting",
+    date: "April 2025 to August 2025",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to png conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Built and maintained responsive web applications using React, HTML, CSS, and JavaScript to deliver seamless user experiences.",
+      "Collaborated with design and backend teams to implement interactive features and ensure cross platform compatibility.",
+      "Optimized React components to enhance performance and reduce page load times.",
+      "Integrated APIs and enhanced UI/UX designs to improve application functionality and user engagement.",
+      "Gained hands-on experience with debugging tools, state management (e.g., Redux), and version control systems like Git"
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
-    date: "2023-2024",
+    title: "Full stack Developer",
+    job: " MoonAir",
+    date: "September 2025 to December 2025",
     contents: [
       "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
       "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
@@ -292,14 +298,100 @@ export const experiences = [
       "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
     ],
   },
+  
+];
+export const reviews = [
   {
-    title: "Freelance Developer",
-    job: "Self-Employed",
-    date: "2025-Present",
-    contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
-    ],
+    name: "TailwindCSS",
+    img: "/logo/tailwindcss.png",
+  },
+   {
+    name: "Redux",
+    img: "/logo/redux.png",
+  },
+   {
+    name: "Jotai",
+    img: "/logo/jotai.png",
+  },
+  {
+    name: "React",
+    img: "/logo/react.png",
+  },
+  {
+    name: "Next.js",
+    img: "/logo/nextjs.png",
+  },
+  {
+    name: "Convex",
+    img: "/logo/convex.png",
+  },
+  {
+    name: "Docker",
+    img: "/logo/docker.png",
+  },
+  {
+    name: "TypeScript",
+    img: "/logo/typescript.png",
+  },
+  {
+    name: "JavaScript",
+    img: "/logo/javascript.png",
+  },
+  {
+    name: "Node.js",
+    img: "/logo/nodejs.png",
+  },
+  {
+    name: "Express.js",
+    img: "/logo/express.png",
+  },
+  {
+    name: "TRPC",
+    img: "/logo/trpc.svg",
+  },
+   {
+    name: "Redis",
+    img: "/logo/redis.png",
+  },
+   {
+    name: "Vercel",
+    img: "/logo/vecel.png",
+  },
+   {
+    name: "github",
+    img: "/logo/github.png",
+  },
+   {
+    name: "Figma",
+    img: "/logo/figma.png",
+  },
+   {
+    name: "Postman",
+    img: "/logo/postman.png",
+  },
+  {
+    name: "Scoket.io",
+    img: "/logo/socket.png",
+  },
+  {
+    name: "Prisma",
+    img: "/logo/prisma.png",
+  },
+  {
+    name: "MongoDB",
+    img: "/logo/mongodb.png",
+  },
+  {
+    name: "PostgreSQL",
+    img: "/logo/postgresql.png",
+  },
+  {
+    name: "MySQL",
+    img: "/logo/mysql.png",
+  },
+  {
+    name: "Zod",
+    img: "/logo/zod.webp",
   },
 ];
 
